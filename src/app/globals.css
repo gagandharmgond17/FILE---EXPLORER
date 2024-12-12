@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #6366f1;
+  --secondary-color: #4f46e5;
+  --text-color: #1f2937;
+  --light-bg: #f3f4f6;
+}
+
+@layer components {
+  .hero {
+    @apply flex items-center justify-between px-6 py-16 bg-gradient-to-r from-gray-50 to-gray-100;
+  }
+
+  .hero-content {
+    @apply max-w-2xl;
+  }
+
+  .hero h1 {
+    @apply text-5xl font-bold mb-6 text-gray-900;
+  }
+
+  .cta-button {
+    @apply px-8 py-4 bg-primary text-white rounded-lg text-lg font-medium 
+    hover:bg-secondary transition-colors duration-300;
+  }
+
+  .features {
+    @apply py-16 px-6 bg-white;
+  }
+
+  .features h2 {
+    @apply text-3xl font-bold text-center mb-12;
+  }
+
+  .features-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto;
+  }
+
+  .feature-card {
+    @apply p-8 rounded-xl bg-gray-50 text-center;
+  }
+
+  .feature-icon {
+    @apply text-4xl mb-4;
+  }
+
+  .pricing {
+    @apply py-16 px-6 bg-gray-50;
+  }
+
+  .pricing h2 {
+    @apply text-3xl font-bold text-center mb-12;
+  }
+
+  .pricing-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto;
+  }
+
+  .pricing-card {
+    @apply p-8 bg-white rounded-xl shadow-lg;
+  }
+
+  .price {
+    @apply text-4xl font-bold text-primary my-4;
+  }
+
+  .pricing-button {
+    @apply w-full py-3 mt-6 bg-primary text-white rounded-lg
+    hover:bg-secondary transition-colors duration-300;
+  }
+
+  .footer {
+    @apply bg-gray-900 text-white py-16 px-6;
+  }
+
+  .footer-content {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto;
+  }
+
+  .footer-section h4 {
+    @apply text-lg font-semibold mb-4;
+  }
+
+  .footer-section ul {
+    @apply space-y-2;
+  }
+
+  .footer-section a {
+    @apply text-gray-400 hover:text-white transition-colors duration-300;
+  }
+
+  .footer-bottom {
+    @apply mt-12 pt-8 border-t border-gray-800 text-center text-gray-400;
+  }
+}
