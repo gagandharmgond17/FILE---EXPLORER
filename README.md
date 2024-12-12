@@ -24,12 +24,12 @@ A robust backend server for a SaaS product built with Node.js, Express, and Mong
 
 1. Clone the repository:
 ```bash
-git clone [your-repository-url]
+git clone https://github.com/gagandharmgond17/FILE---EXPLORER.git
 ```
 
 2. Install dependencies:
 ```bash
-cd project
+cd FILE---EXPLORER
 npm install
 ```
 
